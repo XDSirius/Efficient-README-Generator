@@ -7,8 +7,17 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "inquirer": "8.2.4"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/XDSirius/Efficient-README-Generator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/XDSirius/Efficient-README-Generator/issues"
+  },
+  "homepage": "https://github.com/XDSirius/Efficient-README-Generator#readme"
 }
