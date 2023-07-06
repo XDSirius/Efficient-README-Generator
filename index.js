@@ -1,9 +1,22 @@
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
-const fs = require('fs').promises;
+const fs = require('fs');
 // TODO: Create an array of questions for user input
 const questions = ["what did you create?","What is the name of your project?", "What languages did you use?","What was the goal?","Is there any installition required?","What is the link to the gihub pages?","How do you use this program/website?","List your credits","What Licenses do you have?"];
 
+const generateReadMe = ({creation,project,languages,goal,installation,link,usage,credits,licenses}) =>
+`# ${project}
+${creation} .We used ${languages} to completete this project. Our ${goal}.
+## Installation
+${installation}
+## Usage
+${usage}
+${link}
+## Credits
+${credits}
+## Licenses
+${licenses}
+`;
 const promptUser = () =>{
     inquirer
         .prompt([
@@ -14,7 +27,7 @@ const promptUser = () =>{
             },
             {
                 type: 'input',
-                name : "name",
+                name : "project",
                 message: questions[1],
             },
             {
@@ -57,15 +70,22 @@ const promptUser = () =>{
         ]);
     };
 
+
+
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+//function writeToFile(fileName, data) {
+    .then((answers) => {
+        const readMeContent = generateReadMe(answers);
+        fs.writeFile('readme.html' , readMeContent, (err) =>
+        err ? console.log(err) : console.log("Successfully created readme.html!")
+        );
+    
+    });
+
 
 // TODO: Create a function to initialize app
 const init = () => {
     promptUser()
-    .then((answers) => writeFile('readme.html',generateReadMe(answers)))
-    .then (()=> console.log("Successfully wrote to README"))
-    .CATCH((err)=> console.error(err));
 }
 
 // Function call to initialize app
