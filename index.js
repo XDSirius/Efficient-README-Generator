@@ -73,14 +73,14 @@ const promptUser = () =>{
 
 
 // TODO: Create a function to write README file
-//function writeToFile(fileName, data) {
+function writeToFile(generateReadMe, answers) {
     .then((answers) => {
         const readMeContent = generateReadMe(answers);
         fs.writeFile('readme.html' , readMeContent, (err) =>
         err ? console.log(err) : console.log("Successfully created readme.html!")
         );
-    
     });
+};
 
 
 // TODO: Create a function to initialize app
