@@ -1,25 +1,14 @@
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
-const generateMarkdown = require('generateMarkdown.js')
+const generateMarkdown = require('./utils/generateMarkdown.js')
 const fs = require('fs');
 // TODO: Create an array of questions for user input
 const questions = ["what did you create?","What is the name of your project?", "What languages did you use?","What was the goal?","Is there any installition required?","What is the link to the gihub pages?","How do you use this program/website?","List your credits","What Licenses do you have?"];
 
-const generateReadMe = ({creation,project,languages,goal,installation,link,usage,credits,licenses}) =>
+//const generateReadMe = ({creation,project,languages,goal,installation,link,usage,credits,licenses}) =>
 
-`# ${project}
-${creation} .We used ${languages} to completete this project. Our ${goal}.
-## Installation
-${installation}
-## Usage
-${usage}
-${link}
-## Credits
-${credits}
-## Licenses
-${licenses}
-`
-;
+
+
 const promptUser = () =>{
     inquirer
         .prompt([
@@ -85,7 +74,7 @@ const promptUser = () =>{
 // TODO: Create a function to write README file
 function writeToFile(answers) {
     
-        const readMeContent = generateReadMe(answers);
+        const readMeContent = generateMarkdown(answers);
         fs.writeFile('./outputREADME/readme.md' , readMeContent, (err) =>
         err ? console.log(err) : console.log("Successfully created readme.md!")
         );
