@@ -1,12 +1,12 @@
-# AS ![license](https://img.shields.io/badge/license-AS-blue)
-  AS .We used AS to completete this project. Our ASD.
+# Efficient README Generator ![license](https://img.shields.io/badge/license-Please refer to the LICENSE in the repo.-blue)
+  Efficient Readme Generator .We used JavaScript, Node, HTML to completete this project. Our to create a program that will allow the user to swiftly generate a readme when needed..
   ## Installation
-  AD
+  Only installation required is to install the inquire package.
   ## Usage
-  ADS
-  ASD
+  Once the program has been invoked typing node index.js then follow the prompts and the readme will be generated after the program finishes.
+  N/A
   ## Credits
-  ASD
+  A big thanks to my instructor, staff, Learning Assistants and Tutor for making this possible.
   ## Licenses
-  AS
+  Please refer to the LICENSE in the repo.
   

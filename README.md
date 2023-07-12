@@ -9,6 +9,9 @@ node index.js
 ## Usage
 To use this program, it must be used in the command line. Once the programs has been invoked, then follow the prompts and input your choices. A readme will be generated after the program has finished running.
 
+https://watch.screencastify.com/v/Bk2jOlquzLmm3R8DMnwi
+
+
 ## Credits
 Big thanks to the instructor, staff, BCs Learning Assistant and tutor. 
 ## Licenses
