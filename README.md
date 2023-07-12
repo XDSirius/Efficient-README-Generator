@@ -1,11 +1,15 @@
-# a
-a .We used a to completete this project. Our a.
+# Efficient README Generator
+This week's challenge was to create a command-line application that dynamically generates a professional README.md file from a user's input using the Inquirer package
 ## Installation
-a
+Only installation needed is to use at the command line is:
+npm i inquirer@8.2.4
+
+Then invoke the program by using the following command:
+node index.js
 ## Usage
-a
-a
+To use this program, it must be used in the command line. Once the programs has been invoked, then follow the prompts and input your choices. A readme will be generated after the program has finished running.
+
 ## Credits
-a
+Big thanks to the instructor, staff, BCs Learning Assistant and tutor. 
 ## Licenses
-a
+Please refer to the LICENSE in the repo.
